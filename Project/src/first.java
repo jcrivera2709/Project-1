@@ -4,7 +4,7 @@ import java.util.Scanner;
 // A sweet program to show what you've learned in COP 2006
 public class first {
 	
-	printHello1();
+	 printHello();
 
 	public static void main(String[] args) {
 		Scanner scan  = new Scanner(System.in);
