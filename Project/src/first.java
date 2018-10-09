@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 //José Rivera
-// A sweet program to show what you've learned in COP 2006
+// A sweet program to show what what I have learned in COP 2006
 public class first {
 	
 	 printHello();
@@ -39,7 +39,7 @@ public class first {
 			System.out.println("This is a nice looking number");
 		}
 		
-		//final makes the variable immutable.
+		//final makes the variable immutable.  Casting allows me to make a number into another value.
 		final int num3 = 5;
 		int num4 = 2;
 		double result = (double)num3/num4;
