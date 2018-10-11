@@ -101,6 +101,8 @@ public class first {
     System.out.println("Heres a random Number! ");
     System.out.println(Math.random());
     
+    
+    
   }
     
     public static double calculatePricePerInch(double diameter, double price) {
