@@ -30,8 +30,8 @@ public class first {
     	System.out.println("The wait is going to be " + timewait);
     }
     else {
-    	int timewait2 = party * 3;
-    	System.out.println("The wait time will be " + timewait2);
+    	int timewait = party * 3;
+    	System.out.println("The wait time will be " + timewait);
     }
    
 
@@ -39,7 +39,7 @@ public class first {
 
     // String saves a series of characters to a stated variable.
     String str1 = "So we have ";
-    String str2 = "six different pizzas for today.";
+    String str2 = "six different pizzas for you today.";
 
     System.out.println(str1 + str2);
     
@@ -60,9 +60,9 @@ public class first {
     System.out.println(result);
 
     // these are string methods
-    String str3 = "It has eight slices. ";
+    String str3 = "It has eight slices. Plus ";
 
-    System.out.println(str3 + str3.length());
+    System.out.println(str3 + str3.length() + " toppings.");
 
     String str4;
     str4 = "So if you look at the menu please select a number from 1 through 5 to select your pizza.";
@@ -99,7 +99,6 @@ public class first {
     }
     System.out.println(statement);
     
-   
     System.out.println("Enter pizza diameter:");
     double pizzaDiameter = scan.nextInt();
     System.out.println("Enter pizza price:");
@@ -111,7 +110,31 @@ public class first {
     System.out.println("Heres the random Number of the day! ");
     System.out.println(Math.random());
     
-    
+    System.out.println("And would anyone like something to drink?");
+    int drinks1 = scan.nextInt();
+    if (drinks1%2 == 0) {
+    	System.out.println("Alright coming right up.");
+    }
+    else {
+    	System.out.println("Are you sure I can't get you another drink? It will come out cheaper.");
+    }
+   
+    System.out.println("Alright here is your pizza would you like cheese on that?");
+    String cheese = scan.nextLine();
+    cheese = scan.nextLine();
+    String answer;
+  
+    switch(cheese) {
+    case "yes":
+    	answer = "Okay";
+    	break;
+    case "no":
+    	answer = "Why not?";
+    	break;
+    default:
+    	answer = "What did you say?";
+    }
+    System.out.println(answer);
     
   }
     
@@ -124,6 +147,8 @@ public class first {
       return ppi;
 
   }
+    
+    
     
   
 }
