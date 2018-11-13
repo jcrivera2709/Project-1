@@ -1,4 +1,7 @@
 import java.util.Scanner;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
 
 
 
@@ -12,6 +15,14 @@ public class first {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
     System.out.println("Hello World");
+    
+    JFrame f = new JFrame("Title");
+    f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    draw d = new draw();
+    f.add(d);
+    f.setSize(400,250);
+    f.setVisible(true);
+    
     // int num1;
     // Person john = new Person();
     // john.height = 72;
@@ -86,35 +97,43 @@ public class first {
         break;
     }
     System.out.println(statement);
-    
+
     System.out.println("Which pizza is the best deal?");
     System.out.println("Enter the price and diameter of a pizza");
     System.out.println("to find out the cost per square inch.");
     System.out.println("Enter pizza diameter:");
     double cakeDiameter = scan.nextInt();
     System.out.println("Enter pizza price:");
-    double cakePrice =scan.nextInt();
-   
+    double cakePrice = scan.nextInt();
+
     double pricePerInch = calculatePricePerInch(cakeDiameter, cakePrice);
     System.out.println("Pizza price per inch = " + pricePerInch);
-    
+
     System.out.println("Heres a random Number! ");
     System.out.println(Math.random());
-    
-    
-    
-  }
-    
-    public static double calculatePricePerInch(double diameter, double price) {
-      
-      double cpi;
-      double radius = diameter / 2.0 ;
-      double area = Math.PI * Math.pow(radius, 2);
-      cpi = price / area;
-      return cpi;
+
+    System.out.println();
+    Character Char1 = new Character("Arbiter", 500);
+    System.out.println(Char1.getName());
+    System.out.println(Char1.getHealth());
+
+    Character Char2 = new Character();
+    System.out.println(Char2.getName());
+    System.out.println(Char2.getHealth());
+
 
   }
-    
-  
+
+  public static double calculatePricePerInch(double diameter, double price) {
+
+    double cpi;
+    double radius = diameter / 2.0;
+    double area = Math.PI * Math.pow(radius, 2);
+    cpi = price / area;
+    return cpi;
+
+  }
+
+
 }
 
