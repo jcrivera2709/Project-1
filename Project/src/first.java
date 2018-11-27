@@ -70,10 +70,10 @@ public class first {
 
     System.out.println(str3 + str3.length());
 
-    String str4 =
-        "UpperCase changes the selected characters to upper case letters. And LowerCase does the opposite";
+    String str4 = "UpperCase changes the selected characters to upper case letters. ";
+    String str5 = "And LowerCase does the opposite";
 
-    System.out.println(str4.toUpperCase());
+    System.out.println(str4.toUpperCase() + str5);
 
 
 
@@ -118,13 +118,13 @@ public class first {
     System.out.println(Math.random());
 
     System.out.println();
-    Character Char1 = new Character("Arbiter", 500);
-    System.out.println(Char1.getName());
-    System.out.println(Char1.getHealth());
+    Character char1 = new Character("Arbiter", 500);
+    System.out.println(char1.getName());
+    System.out.println(char1.getHealth());
 
-    Character Char2 = new Character();
-    System.out.println(Char2.getName());
-    System.out.println(Char2.getHealth());
+    Character char2 = new Character();
+    System.out.println(char2.getName());
+    System.out.println(char2.getHealth());
 
     // random number generator
     Random randomGen = new Random();
@@ -166,7 +166,13 @@ public class first {
       testCases--;
     }
 
-
+    // 2D integer array using a for loop
+    int[][] board = new int[3][3];
+    for (int i = 0; i < board.length; i++) {
+      for (int j = 0; j < board[i].length; j++) {
+        board[i][j] = i + j;
+      }
+    }
 
   }
 
@@ -179,6 +185,15 @@ public class first {
     cpi = price / area;
     return cpi;
 
+  }
+
+  // sum of array
+  static int simpleArraySum(int[] ar) {
+    int sum = 0;
+    for (int i = 0; i < ar.length; i++) {
+      sum += ar[i];
+    }
+    return sum;
   }
 
 
