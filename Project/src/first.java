@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import java.util.Random;
 
 
 
@@ -12,23 +13,29 @@ public class first {
 
 
 
-  public static void main(String[] args) {
-    Scanner scan = new Scanner(System.in);
-    System.out.println("Hello World");
-    
-    JFrame f = new JFrame("Title");
-    f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    draw d = new draw();
-    f.add(d);
-    f.setSize(400,250);
-    f.setVisible(true);
-    
+  public static void main(String[] args) throws InterruptedException {
+
+
+    /*
+     * JFrame f = new JFrame("Title"); f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); draw d =
+     * new draw(); f.add(d); f.setSize(400,250); f.setVisible(true);
+     * 
+     * while (true) { d.move(); d.repaint();
+     * 
+     * }
+     */
+
+
+
     // int num1;
     // Person john = new Person();
     // john.height = 72;
     // System.out.println();
 
     // Integer saves a number/integer with no fraction number to a stated variable.
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Hello World");
+
     int num1 = scan.nextInt();
     int num2 = scan.nextInt();
 
@@ -72,7 +79,7 @@ public class first {
 
     int selection = scan.nextInt();
     String statement;
-
+    // switch statement
     switch (selection) {
       case 1:
         statement = "Hello World";
@@ -98,14 +105,12 @@ public class first {
     }
     System.out.println(statement);
 
-    System.out.println("Which pizza is the best deal?");
-    System.out.println("Enter the price and diameter of a pizza");
-    System.out.println("to find out the cost per square inch.");
     System.out.println("Enter pizza diameter:");
     double cakeDiameter = scan.nextInt();
     System.out.println("Enter pizza price:");
     double cakePrice = scan.nextInt();
 
+    // method call
     double pricePerInch = calculatePricePerInch(cakeDiameter, cakePrice);
     System.out.println("Pizza price per inch = " + pricePerInch);
 
@@ -121,9 +126,51 @@ public class first {
     System.out.println(Char2.getName());
     System.out.println(Char2.getHealth());
 
+    // random number generator
+    Random randomGen = new Random();
+
+    System.out.println(randomGen.nextInt(53) + 1);
+
+    int n = scan.nextInt();
+
+    for (int i = 1; i <= 10; i++) {
+      int num = n * i;
+      System.out.println(n + " x " + i + " = " + num);
+    }
+
+    int testCases = scan.nextInt();
+    String str = scan.nextLine();
+
+    // while loop
+    while (testCases >= 0) {
+      str = scan.nextLine();
+
+      char[] charArray = str.toCharArray();
+
+      for (int j = 0; j < str.length(); j++) {
+        if (j % 2 == 0) {
+          System.out.print(charArray[j]);
+        }
+      }
+      System.out.print(" ");
+
+      // enhanced for loop
+      for (int j = 1; j < str.length(); j++) {
+        // even though it says a problem it's not it works correctly
+        if (j % 2 == 1) {
+          System.out.print(charArray[j]);
+        }
+      }
+      System.out.println();
+
+      testCases--;
+    }
+
+
 
   }
 
+  // new method decliration
   public static double calculatePricePerInch(double diameter, double price) {
 
     double cpi;

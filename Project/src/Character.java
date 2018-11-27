@@ -1,4 +1,4 @@
-
+// polymorphism
 public class Character {
   private String name;
   private int health;
@@ -8,6 +8,7 @@ public class Character {
     health = 150;
   }
 
+  // constructs
   public Character(String name, int health) {
     this.name = name;
     this.health = health;
