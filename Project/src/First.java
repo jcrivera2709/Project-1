@@ -15,23 +15,6 @@ public class First {
 
   public static void main(String[] args) throws InterruptedException {
 
-
-    /*
-     * JFrame f = new JFrame("Title"); f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); draw d =
-     * new draw(); f.add(d); f.setSize(400,250); f.setVisible(true);
-     * 
-     * while (true) { d.move(); d.repaint();
-     * 
-     * }
-     */
-
-
-
-    // int num1;
-    // Person john = new Person();
-    // john.height = 72;
-    // System.out.println();
-
     // Integer saves a number/integer with no fraction number to a stated variable.
     Scanner scan = new Scanner(System.in);
     System.out.println("Hello World");
