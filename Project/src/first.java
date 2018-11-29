@@ -176,7 +176,7 @@ public class first {
 
   }
 
-  // new method decliration
+  // new method declirations
   public static double calculatePricePerInch(double diameter, double price) {
 
     double cpi;
