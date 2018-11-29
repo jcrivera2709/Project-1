@@ -9,7 +9,7 @@ import java.util.Random;
 // José Rivera
 // A sweet program to show what what I have learned in COP 2006
 // downloaded java-google-style and Cntrl+Shift+F automatically formatts the project.
-public class first {
+public class First {
 
 
 
